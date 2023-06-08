@@ -1,0 +1,4 @@
+# This is a udev config file to grant 0666 (world readable/writable) for all
+# hid devices on Linux systems.
+# HIDAPI/libusb
+KERNEL=="hiddev*", GROUP="plugdev", MODE="0660"
